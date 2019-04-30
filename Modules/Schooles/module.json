@@ -1,0 +1,14 @@
+{
+    "name": "Schooles",
+    "alias": "schooles",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\Schooles\\Providers\\SchoolesServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

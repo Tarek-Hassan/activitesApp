@@ -1,0 +1,14 @@
+{
+    "name": "Uploads",
+    "alias": "uploads",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\Uploads\\Providers\\UploadsServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

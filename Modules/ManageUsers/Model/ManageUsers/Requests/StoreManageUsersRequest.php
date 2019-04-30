@@ -1,0 +1,30 @@
+<?php
+
+namespace Modules\ManageUsers\Model\ManageUsers\Requests;
+use Illuminate\Foundation\Http\FormRequest;
+
+class StoreManageUsersRequest extends FormRequest
+{
+    public function authorize()
+    {
+        return true;
+    }
+
+    public function rules()
+    {
+        return [
+            
+            'name' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255|unique:users',
+            'password' => 'required|string|min:8|confirmed',
+            'role' => 'required|string|max:190',
+            'phone' => 'required|numeric|',
+            'avatar'=>'required',
+            'country_id'=>'required',
+            'city_id'=>'required',
+            'schoole_id'=>'required',
+            
+
+        ];
+    }
+}
